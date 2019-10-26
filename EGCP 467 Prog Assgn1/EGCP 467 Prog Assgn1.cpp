@@ -56,7 +56,6 @@ int main()
 void StatAttack(std::string cipher, float threshold)
 {
 	std::map<char, float> freqmap = createFrequencyMap(cipher);
-	//freqmap = createFrequencyMap(msg);
 	for (auto i = 0; i < 26; i++)
 	{
 		if (calcPhi(cipher, i) > threshold)
